@@ -1,0 +1,46 @@
+#wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+p {
+	margin-bottom: 60px;
+}
+
+.list-items {
+	@extend %listreset;	
+
+	.post {
+		@include v-align-pair(image, text, middle);
+
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: -4px;
+
+		.image {
+			// width: 50%;
+			overflow: hidden;
+			padding: 0 30px;
+		}
+
+		.text {
+			width: 70%;
+			padding: 10px 20px;
+			vertical-align: middle;
+			overflow: hidden;
+
+		}
+	}	
+}
+
+@media only screen and (max-width:767px){
+	
+}
